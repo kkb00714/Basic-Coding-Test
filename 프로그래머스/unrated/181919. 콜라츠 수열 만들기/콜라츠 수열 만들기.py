@@ -11,13 +11,15 @@ def solution(n):
     answer = [n]
     
     while n != 1: # n 이 1이 될 때까지 반복
+        
         if n % 2 == 0: # 짝수일 때
             n = n // 2 # n을 2로 나눈 "몫" 을 반환
-            answer.append(n)
         else:
             # 홀수일 때
             n = 3 * n + 1
-            answer.append(n)  
+            
+        answer.append(n)
+        # if 코드 블록 이 끝날 때마다 n값 append. 
 
             
     return answer
