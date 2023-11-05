@@ -7,7 +7,8 @@ def solution(names): # names = 걍 문자열임
         attraction.append(names[i:i+5])
         
     for j in range(len(attraction)):
-        answer.append(attraction[j][0])
+        answer.append(attraction[j][0]) 
+        # 2차원 배열 형식
     
     
     return answer
